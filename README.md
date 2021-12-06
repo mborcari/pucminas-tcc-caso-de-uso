@@ -1,6 +1,6 @@
 Para teste dos caso de uso.
 
-1 - Instale as dependências do python
+1 - Instale as dependências do python para os testes.
 
 ```
   pip install -r requirements.txt
