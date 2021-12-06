@@ -7,7 +7,7 @@ stock_list = ['PETR4', 'ABEV3', 'AGRO3', 'ALPA4', 'ANIM3', 'B3SA3', 'BBAS3', 'BB
 
 URL_BASE = 'https://pucminas-ms-pytrader.herokuapp.com/api/get_external_historical'
 
-def run_schedule_get_historical(stocks):
+def run_schedule_get_historical(url, stocks):
     session = requests.Session()
     session.headers.update({
         "content-Type": "application/json",
@@ -18,12 +18,14 @@ def run_schedule_get_historical(stocks):
     for stock in stocks:
         body = {
                 "code_stock": stock,
-                'start_date': '01/09/2021',
-                'end_date': '01/12/2021'
+                'start_date': '01-09-2021',
+                'end_date': '01-12-2021'
                 }
         body = json.dumps(body)
-        r = session.post(url=URL_BASE, data=body)
+        r = session.post(url=url, data=body)
         print(f'return {r}')
     print(f'Testes finalizado as: {datetime.now()}')
+
+
 if __name__ == '__main__':
-    run_schedule_get_historical(stock_list)
+    run_schedule_get_historical(URL_BASE, stock_list)
