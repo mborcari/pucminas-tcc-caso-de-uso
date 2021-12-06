@@ -21,3 +21,8 @@ Para teste dos casos de uso.
 ```
   python get_multiples_historical_data.py
 ```
+
+   Caso de uso para criação de carteira com adição de um ativo na carteira criada.
+```
+  python create_portfolio.py
+```
