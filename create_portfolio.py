@@ -7,6 +7,7 @@ URL_PORTFOLIO_ADD_STOCK = 'http://ec2-18-116-63-102.us-east-2.compute.amazonaws.
 portfolio_name = 'Teste 100'
 stock = 'ABEV3'
 
+
 def login_user(url):
     session = requests.Session()
     session.headers.update({

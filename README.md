@@ -1,3 +1,6 @@
+**Os containers estão hospedados na plataforma Heroku.**
+Após a primeira requisição, pode ser necessário esperar os container sairem do modo 'idle'.
+
 Para teste dos caso de uso.
 
 1 - Instale as dependências do python para os testes.
