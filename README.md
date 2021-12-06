@@ -1,7 +1,8 @@
 **Os containers estão hospedados na plataforma Heroku.**
-Após a primeira requisição, pode ser necessário esperar os container sairem do modo 'idle'.
+Após a primeira requisição, pode ser necessário esperar os container sairem do modo 'idle'. 
+Normalmente depois de 10 segundos.
 
-Para teste dos caso de uso.
+Para teste dos casos de uso.
 
 1 - Instale as dependências do python para os testes.
 
